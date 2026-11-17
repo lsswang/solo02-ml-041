@@ -1,0 +1,241 @@
+{
+  "model": {
+    "theta": [
+      [
+        0.4,
+        0.4,
+        0.1,
+        0.1
+      ],
+      [
+        0.4,
+        0.4,
+        0.1,
+        0.1
+      ]
+    ],
+    "substitution": [
+      [
+        0.94,
+        0.02,
+        0.02,
+        0.02
+      ],
+      [
+        0.02,
+        0.94,
+        0.02,
+        0.02
+      ],
+      [
+        0.02,
+        0.02,
+        0.94,
+        0.02
+      ],
+      [
+        0.02,
+        0.02,
+        0.02,
+        0.94
+      ]
+    ],
+    "background": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "start": [
+      1,
+      0.1,
+      0.1
+    ],
+    "transition": [
+      [
+        1,
+        0.1,
+        0.1
+      ],
+      [
+        0.1,
+        0.1,
+        0.1
+      ],
+      [
+        0.1,
+        0.1,
+        0.1
+      ]
+    ],
+    "end": [
+      1,
+      0.1,
+      0.1
+    ]
+  },
+  "query_before": "AA",
+  "query_after": "CC",
+  "ordinary_policy": {
+    "codons": {
+      "A": [
+        "GCT",
+        "GCC"
+      ],
+      "C": [
+        "TGT",
+        "TGC"
+      ],
+      "D": [
+        "GAT"
+      ],
+      "E": [
+        "GAA"
+      ]
+    },
+    "usage_cost": {
+      "GCT": 0,
+      "GCC": 0.2,
+      "TGT": 0,
+      "TGC": 0.2,
+      "GAT": 0,
+      "GAA": 0
+    },
+    "forbidden": [],
+    "window_width": 3,
+    "window_gc_min": 0,
+    "window_gc_max": 3,
+    "total_gc_min": 0,
+    "total_gc_max": 6
+  },
+  "coupling_policy": {
+    "codons": {
+      "A": [
+        "GCT",
+        "GCC"
+      ],
+      "C": [
+        "TGT",
+        "TGC"
+      ],
+      "D": [
+        "GAT"
+      ],
+      "E": [
+        "GAA"
+      ]
+    },
+    "usage_cost": {
+      "GCT": 0,
+      "GCC": 0.2,
+      "TGT": 0,
+      "TGC": 0.2,
+      "GAT": 0,
+      "GAA": 0
+    },
+    "forbidden": [
+      "CTG"
+    ],
+    "window_width": 3,
+    "window_gc_min": 0,
+    "window_gc_max": 3,
+    "total_gc_min": 0,
+    "total_gc_max": 6
+  },
+  "cross_codon_motif": {
+    "residue_probabilities": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "policy": {
+      "codons": {
+        "A": [
+          "GCT",
+          "GCC"
+        ],
+        "C": [
+          "TGT",
+          "TGC"
+        ],
+        "D": [
+          "GAT"
+        ],
+        "E": [
+          "GAA"
+        ]
+      },
+      "usage_cost": {
+        "GCT": 0,
+        "GCC": 0.2,
+        "TGT": 0,
+        "TGC": 0.2,
+        "GAT": 0,
+        "GAA": 0
+      },
+      "forbidden": [
+        "CTG"
+      ],
+      "window_width": 3,
+      "window_gc_min": 0,
+      "window_gc_max": 3,
+      "total_gc_min": 0,
+      "total_gc_max": 6
+    }
+  },
+  "cross_window": {
+    "residue_probabilities": [
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "policy": {
+      "codons": {
+        "A": [
+          "GCT"
+        ],
+        "C": [
+          "TGC",
+          "TGT"
+        ],
+        "D": [
+          "GAT"
+        ],
+        "E": [
+          "GAA"
+        ]
+      },
+      "usage_cost": {
+        "GCT": 0,
+        "TGC": 0,
+        "TGT": 0.2,
+        "GAT": 0,
+        "GAA": 0
+      },
+      "forbidden": [],
+      "window_width": 3,
+      "window_gc_min": 0,
+      "window_gc_max": 2,
+      "total_gc_min": 0,
+      "total_gc_max": 6
+    }
+  }
+}
